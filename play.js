@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Image, StyleSheet, Text, View  } from 'react-native';
-import { BannerAd, BannerAdSize} from '@react-native-firebase/admob';
+
 
 const rock = require('../assets/r2.png')
 const paper = require('../assets/p1.png')
@@ -31,7 +31,7 @@ const Play = () => {
   return (
     <View style={ StyleSheet.compose(styles.container, {backgroundColor: bgColors[counter - 1]})}>
       <View style={styles.bannerH}>
-      <BannerAd  size={BannerAdSize.SMART_BANNER} unitId="ca-app-pub-4009417255688208/8059400372" />
+     
       </View> 
       {counter > 0?
       (<Text style={styles.header}>{counter}</Text>) : (
@@ -44,7 +44,7 @@ const Play = () => {
       </>
       )}   
          <View style={styles.bannerF}>
-      <BannerAd size={BannerAdSize.SMART_BANNER} unitId="ca-app-pub-4009417255688208/8059400372" />
+     
       </View>
 
     </View>
